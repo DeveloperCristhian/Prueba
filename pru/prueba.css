@@ -1,0 +1,35 @@
+/* Cabecera fija Astra*/
+.main-header-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+z-index:100;
+}
+.site-content{
+	padding-top:75px;
+}
+@media screen and (max-width:
+	900px){
+	.main-header-bar {
+        position: static;
+    }
+	.site-content{
+	padding-top:0px;
+}	
+}
+@media screen and (max-width:768px){
+	.main-header-bar {
+        position: static;
+	}
+	.site-content{
+	padding-top:0px;
+}	
+}
+@media screen and (max-width:330px){
+	.main-header-bar {
+        position: static;
+	}
+	.site-content{
+	padding-top:0px;
+}	
+}

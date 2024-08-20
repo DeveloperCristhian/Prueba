@@ -1,0 +1,38 @@
+/* Estilo para el botón de volver al inicio */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Oculto por defecto */
+    background-color: #cd0000; /* Color de fondo del botón */
+    color: #fff; /* Color del ícono */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Mostrar el botón solo en tabletas y móviles */
+@media screen and (max-width: 1024px) {
+    #scrollToTopBtn {
+        display: block; /* Mostrar el botón en tabletas y móviles */
+    }
+}
+
+#scrollToTopBtn:hover {
+    background-color: #a40101; /* Color de fondo al pasar el mouse */
+}
+
+/* Mostrar el botón cuando el usuario se desplaza hacia abajo */
+#scrollToTopBtn.show {
+    display: block;
+}
+
+<!-- Botón Volver al Inicio -->
+<div id="scrollToTopBtn">
+<i class="fa-solid fa-angle-up"></i><!-- Usa FontAwesome u otro icono -->
+</div>
